@@ -24,8 +24,8 @@ const jdCookieNode = $.isNode() ? require('./jdCookie.js') : '';
 let cookiesArr = [], cookie = '';
 const randomCount = $.isNode() ? 2 : 2;
 const inviteCodes = [
-    ``,
-    ``,
+    `_ps4X-FPoItTbL99e_xws6p3h5--Jib8jnSp0vcKkg`,
+    `_ps4X-FPoItTbL99e_xws6p3h5--Jib8jnSp0vcKkg`,
 ]
 if ($.isNode()) {
     Object.keys(jdCookieNode).forEach((item) => {
@@ -164,7 +164,7 @@ async function helpFriends() {
 
 async function requireBaseConfig(noti = 'false') {
 
-    let body = { "inviteId": "" }
+    let body = { "inviteId": "_ps4X-FPoItTbL99e_xws6p3h5--Jib8jnSp0vcKkg" }
     return new Promise(resolve => {
         $.post(taskPostUrl('newyearmoney_home', body), (err, resp, data) => {
             try {
@@ -242,7 +242,7 @@ function taskPostUrl(functionId, body = {}) {
 function readShareCode() {
     console.log(`开始`)
     return new Promise(async resolve => {
-        $.get({ url: `https://api.r2ray.com/jd.newYearMoney/index?num=0` }, (err, resp, data) => {
+        $.get({ url: `https://raw.githubusercontent.com/l499477004/updateTeam/master/jd_newYearMoneyShareCode.json` }, (err, resp, data) => {
             try {
                 if (err) {
                     console.log(`${JSON.stringify(err)}`)
