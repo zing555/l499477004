@@ -1,10 +1,8 @@
 /*
 京东新年压岁钱
-
 活动入口：首页搜索栏-压岁钱直达
 脚本更新地址：https://raw.githubusercontent.com/i-chenzhe/qx/main/jd_newYearMoney.js
 脚本兼容: Quantumult X, Surge, Loon, JSBox, Node.js
-
 ==========Quantumult X==========
 [task_local]
 #京东新年压岁钱
@@ -159,7 +157,7 @@ async function helpFriends() {
         }
         await $.wait(2000);
     }
-    await submitShareCode({ 'shareCode': $.userInfo.inviteId }, 'new');
+    await submitShareCode({ 'shareCode': $.userInfo.inviteId ,'pt_key':$.UserName}, 'new');
 }
 
 async function requireBaseConfig(noti = 'false') {
