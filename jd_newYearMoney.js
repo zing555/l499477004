@@ -24,8 +24,8 @@ const jdCookieNode = $.isNode() ? require('./jdCookie.js') : '';
 let cookiesArr = [], cookie = '';
 const randomCount = $.isNode() ? 2 : 2;
 const inviteCodes = [
-    `_ps4X-FPoItTbL99e_xws6p3h5--JiX6h3Ou1_kLkQ`,
-    `_ps4X-FPoItTbL99e_xws6p3h5--JiX6h3Ou1_kLkQ`,
+    `_ps4X-FPoItTbL99e_xws6p3h5--JiT4hnSn0fcBlg`,
+    `_ps4X-FPoItTbL99e_xws6p3h5--JiT4hnSn0fcBlg`,
 ]
 if ($.isNode()) {
     Object.keys(jdCookieNode).forEach((item) => {
@@ -164,7 +164,7 @@ async function helpFriends() {
 
 async function requireBaseConfig(noti = 'false') {
 
-    let body = { "inviteId": "_ps4X-FPoItTbL99e_xws6p3h5--JiX6h3Ou1_kLkQ" }
+    let body = { "inviteId": "_ps4X-FPoItTbL99e_xws6p3h5--JiT4hnSn0fcBlg" }
     return new Promise(resolve => {
         $.post(taskPostUrl('newyearmoney_home', body), (err, resp, data) => {
             try {

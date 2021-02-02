@@ -50,8 +50,8 @@ const inviteCodes = [
   `cgxZK2iLIL3d6g7NZ1jlo2L_WEfTuQOAFo_FWI8L2Ik@cgxZdTXtRuWLkFWTcl_Ykmw3B4Pwrdg_H-XNVODWlQa8keW2VZ5jgss`
 ];
 const pkInviteCodes = [
-  'IgNWdiLGaPbe4wfNDwKp7wA5j8PTR3WirsssxA5iIRIv0DkR0ys@IgNWdiLGaPbe4wfNDwKp7wA5j8PTR3X8861KnFgYekzpsxMWbGJOfgS1',
-  'IgNWdiLGaPbe4wfNDwKp7wA5j8PTR3WirsssxA5iIRIv0DkR0ys@IgNWdiLGaPbe4wfNDwKp7wA5j8PTR3X8861KnFgYekzpsxMWbGJOfgS1'
+  'IgNWdiLGaPbe4wfNDwKp7wA5j8PTR3WirsssxA5iIRIv0DkR0yw@IgNWdiLGaPbe4wfNDwKp7wA5j8PTR3X8861KnFgYekzpsxMWbGJOfgS1',
+  'IgNWdiLGaPbe4wfNDwKp7wA5j8PTR3WirsssxA5iIRIv0DkR0yw@IgNWdiLGaPbe4wfNDwKp7wA5j8PTR3X8861KnFgYekzpsxMWbGJOfgS1'
 ]
 !(async () => {
   await requireConfig();
