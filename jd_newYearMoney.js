@@ -1,8 +1,10 @@
 /*
 京东新年压岁钱
+
 活动入口：首页搜索栏-压岁钱直达
 脚本更新地址：https://raw.githubusercontent.com/i-chenzhe/qx/main/jd_newYearMoney.js
 脚本兼容: Quantumult X, Surge, Loon, JSBox, Node.js
+
 ==========Quantumult X==========
 [task_local]
 #京东新年压岁钱
@@ -22,8 +24,8 @@ const jdCookieNode = $.isNode() ? require('./jdCookie.js') : '';
 let cookiesArr = [], cookie = '';
 const randomCount = $.isNode() ? 2 : 2;
 const inviteCodes = [
-    `_ps4X-FPoItTbL99e_xws6p3h5--Jib8jnSp0vcKkg`,
-    `_ps4X-FPoItTbL99e_xws6p3h5--Jib8jnSp0vcKkg`,
+    `_ps4X-FPoItTbL99e_xws6p3h5--JiX6h3Ou1_kLkQ`,
+    `_ps4X-FPoItTbL99e_xws6p3h5--JiX6h3Ou1_kLkQ`,
 ]
 if ($.isNode()) {
     Object.keys(jdCookieNode).forEach((item) => {
@@ -162,7 +164,7 @@ async function helpFriends() {
 
 async function requireBaseConfig(noti = 'false') {
 
-    let body = { "inviteId": "_ps4X-FPoItTbL99e_xws6p3h5--Jib8jnSp0vcKkg" }
+    let body = { "inviteId": "_ps4X-FPoItTbL99e_xws6p3h5--JiX6h3Ou1_kLkQ" }
     return new Promise(resolve => {
         $.post(taskPostUrl('newyearmoney_home', body), (err, resp, data) => {
             try {

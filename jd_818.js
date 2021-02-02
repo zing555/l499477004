@@ -88,7 +88,7 @@ let helpCode = []
       // await main();
     }
   }
-  // console.log($.temp)
+  // console.log(JSON.stringify($.temp))
 })()
     .catch((e) => {
       $.log('', `❌ ${$.name}, 失败! 原因: ${e}!`, '')
@@ -839,7 +839,7 @@ function getListRank() {
     })
   })
 }
-function updateShareCodes(url = 'https://raw.githubusercontent.com/LXK9301/updateTeam/master/jd_shareCodes.json') {
+function updateShareCodes(url = 'https://raw.githubusercontent.com/l499477004/updateTeam/master/jd_shareCodes.json') {
   return new Promise(resolve => {
     //https://cdn.jsdelivr.net/gh/LXK9301/updateTeam@master/jd_shareCodes.json
     //https://raw.githubusercontent.com/LXK9301/updateTeam/master/jd_shareCodes.json
@@ -858,7 +858,7 @@ function updateShareCodes(url = 'https://raw.githubusercontent.com/LXK9301/updat
     })
   })
 }
-function updateShareCodesCDN(url = 'https://gitee.com/lxk0301/updateTeam/raw/master/jd_shareCodes.json') {
+function updateShareCodesCDN(url = 'https://gitee.com/LiYutian/updateTeam/raw/master/jd_shareCodes.json') {
   return new Promise(resolve => {
     //https://cdn.jsdelivr.net/gh/LXK9301/updateTeam@master/jd_shareCodes.json
     $.get({url}, async (err, resp, data) => {
