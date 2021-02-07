@@ -210,7 +210,7 @@ async function main() {
       if ($.jdLogin && $.LKYLLogin) {
         console.log(`===========【开始助力好友赛跑】===========`)
         const runIndex = $.index > run_pins.length ? (run_pins.length - 1) : ($.index - 1);
-        const new_run_pins = run_pins[runIndex].split(',');
+        let new_run_pins = run_pins[runIndex].split(',');
         await run(new_run_pins);
       }
       await showMsg();
