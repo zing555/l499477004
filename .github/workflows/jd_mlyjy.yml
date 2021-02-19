@@ -28,6 +28,7 @@ jobs:
         run: |
           cd ~/scripts
           npm install
+          npm install ws
       - name: '运行 【美丽颜究院】'
         run: |
           cd ~/scripts
