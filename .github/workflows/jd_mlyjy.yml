@@ -10,7 +10,7 @@ on:
   watch:
     types: started
   repository_dispatch:
-    types: xmf
+    types: mlyjy
 jobs:
   build:
 
@@ -31,7 +31,7 @@ jobs:
       - name: '运行 【美丽颜究院】'
         run: |
           cd ~/scripts
-          node jd_xmf.js
+          node jd_mlyjy.js
         env:
           FRUIT_NOTIFY_CONTROL: ${{ secrets.FRUIT_NOTIFY_CONTROL }}
           FRUITSHARECODES: ${{ secrets.FRUITSHARECODES }}
