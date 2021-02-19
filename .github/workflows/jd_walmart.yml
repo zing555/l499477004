@@ -10,7 +10,7 @@ on:
   watch:
     types: started
   repository_dispatch:
-    types: almart
+    types: walmart
 jobs:
   build:
 
@@ -31,7 +31,7 @@ jobs:
       - name: '运行 【百沃尔玛粉丝互动】'
         run: |
           cd ~/scripts
-          node jd_almart.js
+          node jd_walmart.js
         env:
           FRUIT_NOTIFY_CONTROL: ${{ secrets.FRUIT_NOTIFY_CONTROL }}
           FRUITSHARECODES: ${{ secrets.FRUITSHARECODES }}
