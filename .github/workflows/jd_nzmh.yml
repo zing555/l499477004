@@ -1,16 +1,16 @@
 # This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
 # For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
 
-name: 美丽颜究院
+name: 女装盲盒抽京豆
 
 on:
   workflow_dispatch:
   schedule:
-    - cron: '23 1,5,12 * * *'
+    - cron: '0 23 * * *'
   watch:
     types: started
   repository_dispatch:
-    types: mlyjy
+    types: nzmh
 jobs:
   build:
 
@@ -28,14 +28,12 @@ jobs:
         run: |
           cd ~/scripts
           npm install
-          npm install ws
-      - name: '运行 【美丽颜究院】'
+      - name: '运行 【女装盲盒抽京豆】'
         run: |
           cd ~/scripts
-          node jd_mlyjy.js
+          node jd_nzmh.js
         env:
-          FRUIT_NOTIFY_CONTROL: ${{ secrets.FRUIT_NOTIFY_CONTROL }}
-          FRUITSHARECODES: ${{ secrets.FRUITSHARECODES }}
+          JD_CASH_SHARECODES: ${{ secrets.JD_CASH_SHARECODES }}
           JD_COOKIE: ${{ secrets.JD_COOKIE }}
           JD_DEBUG: ${{ secrets.JD_DEBUG }}
           JD_USER_AGENT: ${{ secrets.JD_USER_AGENT }}
